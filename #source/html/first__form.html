@@ -1,0 +1,33 @@
+<div class="first__form">
+	<div class="page__container _container">
+		<div class="form container">
+			<form action="#" id="add-product-form">
+				<div class="name container">
+					<label for="product-name" class="form-input-label required">Наименование товара</label>
+					<input type="text" placeholder="Наименование товара" class="product-name sett" id="product-name">
+					<div class="input-error hidden" id="product-name-error">Поле является обязательным
+					</div>
+				</div>
+				<div class="description container">
+					<label for="product-description" class="form-input-label">Описание товара</label>
+					<textarea placeholder="Введите описание товара" class="product-description sett" id="product-description" ></textarea>
+				</div>
+				<div class="image container">
+					<label for="product-image-url" class="form-input-label required">Ссылка на изображение</label>
+					<input type="url" placeholder="Ссылка на изображение товара" class="product-image sett" id="product-image-url">
+					<div class="input-error hidden" id="product-image-error">Поле является обязательным
+					</div>
+				</div>
+				<div class="price container">
+					<label for="product-price" class="form-input-label required">Цена товара</label>
+					<input type="number" placeholder="Цена товара" class="product-price sett" id="product-price">
+					<div class="input-error hidden" id="product-price-error">Поле является обязательным
+					</div>
+				</div>
+				<button type="submit" class="button_submit" id="add-product-submit">Добавить товар</button>
+			</form>
+		</div>
+	</div>
+	<div class="page__body" id="cards-container">
+	</div>
+</div>

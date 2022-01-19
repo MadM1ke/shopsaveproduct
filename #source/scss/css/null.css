@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*Обнуляем все теги(отступы и границы)*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/*Меняем подсчёт ширины блока для удобной верстки*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*Убираем линии обводки у некоторых браузеров*/
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+/*Делаем некоторые теги блочными*/
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+/*Уравнение поведения шрифта всего файла
+(блокируют самольное увеличение)*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/*Наследуем семейство шрифта: */
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+/*Убираем некотрые "особенности" в браузре
+(крестики в INPUTE/лишние отступы кнопок/
+чистка стилей маркерованных списков)*/
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  -webkit-text-decoration: nonte;
+          text-decoration: nonte; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+/*Обнуление всех H заголовков*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
